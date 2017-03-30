@@ -4,6 +4,10 @@ import os, sys, time, zipfile
 source_dir = [r'D:\\Artificial_Intelligence']
 target_dir = r'D:\\backup\\'
 
+if not os.path.exists(target_dir):
+    os.mkdir(target_dir)
+    print 'Successfully created directory', target_dir
+
 today = target_dir + time.strftime('%Y%m%d')
 now = time.strftime('%H%M%S')
 
